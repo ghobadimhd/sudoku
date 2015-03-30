@@ -7,6 +7,7 @@ describtion : This is program is a sudoku solver .
 */
 #include <dataStructure.h>
 #include <stdio.h>
+#include <tester.h>
 
 int main(int argc, const char *argv[])
 {
