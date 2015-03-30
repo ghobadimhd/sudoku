@@ -5,6 +5,7 @@ Author : Mohammad Ghobadi
 Email : ghobadi.mhd@outlook.com
 describtion : This is program is a sudoku solver .
 */
+#include <dataStructure.h>
 #include <stdio.h>
 
 int main(int argc, const char *argv[])
