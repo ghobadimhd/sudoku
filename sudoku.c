@@ -7,10 +7,11 @@ describtion : This is program is a sudoku solver .
 */
 #include <dataStructure.h>
 #include <stdio.h>
+#include <ui.h>
 
 int main(int argc, const char *argv[])
 {
-	// getting a usolved puzzle 
+	getPuzzle();
 	// solving puzzle 
 	// printing puzzle 
 	return 0;
