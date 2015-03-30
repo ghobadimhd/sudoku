@@ -27,3 +27,19 @@ int columnTest(int row , int column)
 	if (count > 1 )	// there is repeated value in column 
 		return 0 ;
 }
+/*
+this is function for testing a cell in it's box .
+*/
+int boxTest(int row , int column)
+{
+	int cellValue = puzzle[row][column] , count = 0;
+	int i=row / 3 * 3 , j = column / 3 * 3 ;
+	if(cellValue != 0)
+		for(; i < 3 ; i++)
+			for(; j < 3 ; j++)
+				if (puzzle[row][column] == cellValue)
+					count++;
+	if (count > 1 )	
+			return 0 ;
+	return 1 ;
+}
