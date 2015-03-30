@@ -43,3 +43,14 @@ int boxTest(int row , int column)
 			return 0 ;
 	return 1 ;
 }
+/*
+this is function for getting a full test for a cell .
+*/
+int cellTest(int row , int column )
+{
+	// if one of tests return 0 , cell value is invalid .
+	if( rowTest(row , column ) + columnTest(row , column ) + boxTest(row , column )   < 3 )
+				return 0;
+	return 1 ;
+
+}
