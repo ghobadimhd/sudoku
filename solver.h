@@ -8,7 +8,7 @@ int backtrack(int cellNumber)
 		printf("%d  ", cellNumber);
 		//debug 
 		int row = cellNumber / 9  ,
-		column = row + (cellNumber % 9 ) ;
+		column = (cellNumber % 9 ) ;
 		if(puzzle[row][column] == 0)
 		{
 			for(int i=1 ; i < 10 ; i++) 
@@ -16,15 +16,17 @@ int backtrack(int cellNumber)
 				
 					puzzle[row][column]=i;
 					if(cellTest(row , column));
-						if(! backtrack(cellNumber + 1) )
+						if( backtrack(cellNumber + 1) )
 							return 1;
 			}
 			puzzle[row][column]=0;
 			return 0 ; // no match 
 		}
 		else
-			if(! backtrack(cellNumber + 1) )
+			if( backtrack(cellNumber + 1) )
 				return 1;
+			else
+				return 0;
 	}
 	return 1 ; 
 }
