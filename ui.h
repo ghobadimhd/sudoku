@@ -10,7 +10,7 @@ void getPuzzle()
 		scanf("%s",row);
 		for (int j = 0; j <9; j++) 
 		{
-			puzzle[i*9][j] = row[j] - 48;
+			puzzle[i][j] = row[j] - 48;
 		}
 	}
 	printf("Thanks.. please wait...\n");
