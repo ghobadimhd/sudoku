@@ -26,6 +26,7 @@ int columnTest(int row , int column)
 					count++;
 	if (count > 1 )	// there is repeated value in column 
 		return 0 ;
+	return 1;
 }
 /*
 this is function for testing a cell in it's box .
