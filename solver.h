@@ -5,8 +5,6 @@ int backtrack(int cellNumber)
 {
 	if ( cellNumber < 81 ) 
 	{
-		printf("%d  ", cellNumber);
-		//debug 
 		int row = cellNumber / 9  ,
 		column = (cellNumber % 9 ) ;
 		if(puzzle[row][column] == 0)
