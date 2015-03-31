@@ -15,3 +15,17 @@ void getPuzzle()
 	}
 	printf("Thanks.. please wait...\n");
 }
+/*
+ *  * this is function for printing puzzle on screen .
+ *   * */
+void printPuzzle()
+{
+	for (int i = 0; i <9; i++) 
+	{
+		for (int j = 0; j <9; j++) 
+		{
+			printf("%d ",puzzle[i][j]);
+		}
+		printf("\n");
+	}
+}
