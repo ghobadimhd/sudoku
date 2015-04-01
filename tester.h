@@ -1,5 +1,6 @@
 /*
 this is function for testing a cell in it's row .
+it's read cell value and count cells with same value in it's row more than one is not valid
 */
 int rowTest(int row , int column)
 {
@@ -15,6 +16,7 @@ int rowTest(int row , int column)
 }
 /*
 this is function for testing a cell in it's column .
+it's read cell value and count cells with same value in it's column more than one is not valid
 */
 int columnTest(int row , int column)
 {
@@ -30,6 +32,7 @@ int columnTest(int row , int column)
 }
 /*
 this is function for testing a cell in it's box .
+function search the cells box for value of the cell , more than 1 match is not valid 
 */
 int boxTest(int row , int column)
 {
