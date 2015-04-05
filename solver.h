@@ -17,7 +17,7 @@ int backtrack(int cellNumber)
 			{
 				// testing cell for numbers 
 					puzzle[row][column]=i;
-					if(cellTest(row , column));
+					if(cellTest(row , column))
 						if( backtrack(cellNumber + 1) ) // if other cells filled and return true , it's means this number also ok
 							return 1;		// and function most return true 
 			}
