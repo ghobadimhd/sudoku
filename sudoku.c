@@ -8,11 +8,12 @@ describtion : This is program is a sudoku solver .
 #include <dataStructure.h>
 #include <stdio.h>
 #include <ui.h>
-
+#include <tester.h>
+#include <solver.h>
 int main(int argc, const char *argv[])
 {
 	getPuzzle();
-	// solving puzzle 
-	// printing puzzle 
+	backtrack(0);
+	printPuzzle();
 	return 0;
 }
