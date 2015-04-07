@@ -20,3 +20,24 @@ int readFromFile(char path[])
 	}
 	return 1 ;
 }
+/*
+this is function for saving result in file .
+*/
+int saveInFile(char path[])
+{
+	FILE *fptr  ;
+	fptr = fopen(path , "w");
+	if(fptr == NULL)
+		return 0;
+	char cell ; 
+	cell = fgetc(fptr);
+	for (int i = 0; i <9; i++) 
+	{
+		for (int j = 0; j <9; j++) 
+		{
+			fprintf(fptr, "%d",puzzle[i][j]);
+		}
+		fprintf(fptr, "\n");
+	}
+	return 1 ;
+}
